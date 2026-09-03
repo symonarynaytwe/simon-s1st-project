@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Simeon footwear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Simeon <span>footwear</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">🌙</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Our Premium Collection</h1>
+        
+        <!-- Interactive Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Brands</button>
+            <button class="filter-btn" data-filter="nike">Nike</button>
+            <button class="filter-btn" data-filter="adidas">Adidas</button>
+            <button class="filter-btn" data-filter="puma">Puma</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid-3 dynamic-grid">
+            <!-- Nike 1 -->
+            <div class="card product-card" data-category="nike">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Nike Air Max">
+                <div class="product-info">
+                    <span class="brand-badge">Nike</span>
+                    <h3>Air Max Performance</h3>
+                    <p class="price">UGX 280,000</p>
+                    <button class="buy-btn">Add To Cart</button>
+                </div>
+            </div>
+            <!-- Adidas 1 -->
+            <div class="card product-card" data-category="adidas">
+                <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=500" alt="Adidas Ultraboost">
+                <div class="product-info">
+                    <span class="brand-badge">Adidas</span>
+                    <h3>Ultraboost Streetwear</h3>
+                    <p class="price">UGX 310,000</p>
+                    <button class="buy-btn">Add To Cart</button>
+                </div>
+            </div>
+            <!-- Puma 1 -->
+            <div class="card product-card" data-category="puma">
+                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500" alt="Puma Classic">
+                <div class="product-info">
+                    <span class="brand-badge">Puma</span>
+                    <h3>Puma Suede Classic</h3>
+                    <p class="price">UGX 220,000</p>
+                    <button class="buy-btn">Add To Cart</button>
+                </div>
+            </div>
+            <!-- Nike 2 -->
+            <div class="card product-card" data-category="nike">
+                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500" alt="Nike Dunk Low">
+                <div class="product-info">
+                    <span class="brand-badge">Nike</span>
+                    <h3>Dunk Low Retro</h3>
+                    <p class="price">UGX 260,000</p>
+                    <button class="buy-btn">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Simeon footwear. All Rights Reserved. Crafted for Excellence.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
