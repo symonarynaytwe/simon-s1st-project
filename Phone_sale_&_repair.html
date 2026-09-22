@@ -460,6 +460,16 @@
         <p>&copy; 2026 FixPoint Mobile. All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript -->
+    <script>
+        const form = document.querySelector(".repair form");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            alert("Your repair request has been received!");
+        });
+    </script>
 </body>
 </html>
 ```
