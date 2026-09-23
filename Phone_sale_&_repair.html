@@ -467,10 +467,15 @@
 form.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const name = form.querySelector("input").value;
+    const name = form.querySelector("input:nth-of-type(1)").value;
+    const phoneModel = form.querySelector("input:nth-of-type(2)").value;
     const problem = form.querySelector("select").value;
 
-    alert("Thank you, " + name + "! We received your request for a " + problem + " repair.");
+    alert(
+        "Thank you, " + name +
+        "! We received your request for your " + phoneModel +
+        ". Problem: " + problem + "."
+    );
 });
     </script>
 </body>
