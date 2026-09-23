@@ -464,11 +464,13 @@
     <script>
         const form = document.querySelector(".repair form");
 
-        form.addEventListener("submit", function(event) {
-            event.preventDefault();
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
 
-            alert("Your repair request has been received!");
-        });
+    const name = form.querySelector("input").value;
+
+    alert("Thank you, " + name + "! Your repair request has been received.");
+});
     </script>
 </body>
 </html>
