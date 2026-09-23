@@ -462,14 +462,15 @@
 
     <!-- JavaScript -->
     <script>
-        const form = document.querySelector(".repair form");
+   const form = document.querySelector(".repair form");
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const name = form.querySelector("input").value;
+    const problem = form.querySelector("select").value;
 
-    alert("Thank you, " + name + "! Your repair request has been received.");
+    alert("Thank you, " + name + "! We received your request for a " + problem + " repair.");
 });
     </script>
 </body>
