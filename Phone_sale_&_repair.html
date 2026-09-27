@@ -355,6 +355,19 @@
                 Simple solutions for your phone needs.
             </p>
 
+            <div class="container my-4">
+    <div class="input-group">
+        <input type="text" 
+               id="repairSearch"
+               class="form-control"
+               placeholder="Search for a phone repair...">
+
+        <button class="btn btn-primary" type="button">
+            Search
+        </button>
+    </div>
+</div>
+
             <div class="cards">
 
                 <article class="repair-card">
@@ -419,17 +432,6 @@
         </section>
         <!-- Repair Booking -->
 <section class="repair" id="repair">
-
-    <div class="container my-4">
-    <div class="input-group">
-        <input type="text" class="form-control" 
-               placeholder="Search for a phone repair...">
-
-        <button class="btn btn-primary" type="button">
-            Search
-        </button>
-    </div>
-</div>
 
     <h2>Book a Phone Repair</h2>
 
@@ -499,6 +501,25 @@ form.addEventListener("submit", function(event) {
     );
 });
     </script>
+
+    <script>
+    const searchInput = document.getElementById("repairSearch");
+    const repairCards = document.querySelectorAll(".repair-card");
+
+    searchInput.addEventListener("input", function () {
+        const searchText = searchInput.value.toLowerCase();
+
+        repairCards.forEach(function (card) {
+            const repairName = card.textContent.toLowerCase();
+
+            if (repairName.includes(searchText)) {
+                card.style.display = "";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+</script>
 </body>
 </html>
 ```
