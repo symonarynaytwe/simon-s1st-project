@@ -396,9 +396,50 @@
                         and other useful accessories.
                     </p>
                 </article>
-                <button class="btn btn-outline-primary">View Details</button>
+                <button type="button" 
+            class="btn btn-outline-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#phoneModal">
+        View Details
+    </button>
 
             </div>
+            <div class="modal fade" id="screenModal" tabindex="-1" 
+     aria-labelledby="screenModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="phoneModalLabel">
+                    Screen Replacement
+                </h5>
+
+                <button type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <p><strong>Service:</strong> Screen Replacement</p>
+                <p><strong>Suitable for:</strong> Cracked or damaged screens</p>
+                <p><strong>Estimated time:</strong> 1–2 hours</p>
+                <p><strong>Price:</strong> From UGX 50,000</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" 
+                        class="btn btn-secondary" 
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
 
         </section>
 
