@@ -573,6 +573,8 @@
     
 </section>
 
+<div id="repair-status"></div>
+
 
         <!-- Contact -->
         <section class="contact" id="contact">
@@ -678,6 +680,51 @@ form.addEventListener("submit", function(event) {
         // Clear the form
         repairForm.reset();
     });
+</script>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script>
+    function RepairStatus() {
+        const [status, setStatus] = React.useState("");
+
+        function checkRepair() {
+            setStatus("Your phone is currently being repaired 🔧");
+        }
+
+        return React.createElement(
+            "div",
+            { className: "card p-4 shadow-sm" },
+
+            React.createElement(
+                "h3",
+                null,
+                "Check Repair Status"
+            ),
+
+            React.createElement(
+                "button",
+                {
+                    className: "btn btn-primary mt-2",
+                    onClick: checkRepair
+                },
+                "Check Status"
+            ),
+
+            React.createElement(
+                "p",
+                { className: "mt-3" },
+                status
+            )
+        );
+    }
+
+    const root = ReactDOM.createRoot(
+        document.getElementById("repair-status")
+    );
+
+    root.render(
+        React.createElement(RepairStatus)
+    );
 </script>
 </body>
 </html>
