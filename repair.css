@@ -1,0 +1,314 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background: #101828;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        #lightModeBtn {
+    background-color: #f8b4b4;
+    border-color: #f8b4b4;
+    color: #5c0000;
+}
+
+#lightModeBtn:hover {
+    background-color: #f28b8b;
+    border-color: #f28b8b;
+}
+
+#darkModeBtn {
+    background-color: #0d3b66;
+    border-color: #0d3b66;
+    color: white;
+}
+
+#darkModeBtn:hover {
+    background-color: #082f52;
+    border-color: #082f52;
+}
+
+        /* Hero section */
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+            background: linear-gradient(135deg, #0f172a, #1e3a5f);
+            color: white;
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            line-height: 1.7;
+            margin-bottom: 25px;
+            color: #dbeafe;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 22px;
+            background: #38bdf8;
+            color: #082f49;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+
+        /* Phone illustration */
+        .phone {
+            width: 190px;
+            height: 350px;
+            border: 8px solid #111827;
+            border-radius: 28px;
+            background: linear-gradient(160deg, #38bdf8, #2563eb);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .phone-screen {
+            width: 150px;
+            height: 300px;
+            border-radius: 18px;
+            background: #e0f2fe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0f172a;
+            font-weight: bold;
+        }
+
+        /* Services */
+        .services {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            color: #667085;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .icon {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #667085;
+            line-height: 1.6;
+        }
+
+        /* Products */
+        .products {
+            background: #eaf4fb;
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .product {
+            background: white;
+            width: 220px;
+            padding: 22px;
+            border-radius: 12px;
+        }
+
+        .product h3 {
+            margin: 15px 0 8px;
+        }
+
+        .price {
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #101828;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile design */
+        @media (max-width: 750px) {
+
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 6px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Repair booking */
+.repair {
+    padding: 60px 8%;
+    text-align: center;
+    background: white;
+}
+
+.repair h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.repair p {
+    color: #667085;
+    margin-bottom: 25px;
+}
+
+.repair form {
+    max-width: 500px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
+
+.repair input,
+.repair select {
+    padding: 13px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.repair button {
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: #082f49;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.repair button:hover {
+    background: #0ea5e9;
+    color: white;
+}
+
+/* Improve spacing and appearance of repair cards */
+.repair-card {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
