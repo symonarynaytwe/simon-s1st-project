@@ -116,3 +116,8 @@ const searchInput = document.getElementById("repairSearch");
 
     return true;
 }
+
+    <!-- JavaScript -->
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+ src="https://unpkg.com/react@18/umd/react.development.js"
+ src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
