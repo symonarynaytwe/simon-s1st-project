@@ -110,7 +110,7 @@ const searchInput = document.getElementById("repairSearch");
     let phoneModel = document.getElementById("phoneModel").value;
 
     if (phoneModel === "") {
-        alert("Please enter your phone model.");
+        alert("Please enter ur phone model. our dear customer");
         return false;
     }
 
