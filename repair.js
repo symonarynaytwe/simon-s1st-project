@@ -180,7 +180,7 @@ const searchInput = document.getElementById("repairSearch");
         const [status, setStatus] = React.useState("");
 
         function checkRepair() {
-            setStatus("Your phone is currently being repaired 🔧");
+            setStatus("Your phone is currently being repaired our dear customer 🔧");
         }
 
         return React.createElement(
